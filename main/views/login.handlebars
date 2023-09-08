@@ -1,34 +1,19 @@
-<!-- Modal Button -->
-
-<div class='jcc'>
-  <div class='fit-form'>
-    <h4>Login</h4>
-    <div>
-      <form class='form login-form'>
-        <div>
-          <div class='input-field'>
-            <input id='email' type='email' class='validate' />
-            <label for='email'>email</label>
-          </div>
-          <div class='input-field'>
-            <input id='password' type='password' class='validate' />
-            <label for='password' class='validate'>password</label>
-          </div>
-          <div class='input-field'>
-            <button
-              type='login'
-              class='waves-effect waves-light btn findbtn'
-            >Login</button>
-          </div>
-          {{! future development to build another page for reset password}}
-          <div class='input-field'>
-            <a href='/signup'>need an account? click here 👉🏻 to sign up </a>
-          </div>
-
-        </div>
-      </form>
-    </div>
+<div class="card">
+  <div class="card-header">
+    <h2>Login</h2>
   </div>
+  <form id="login-form" class="card-body">
+    <div>
+      <label for="username-input-login">Username</label>
+      <input type="text" id="username-input-login" />
+    </div>
+    <div>
+      <label for="password-input-login" class="form-label">Password</label>
+      <input type="password" id="password-input-login" />
+    </div>
+    <button type="submit" id="login-btn" class="btn">Login!</button>
+    <a type="button" href="/signup">Sign up instead</a>
+  </form>
 </div>
 
-<script src='./js/login.js'></script>
+<script src="/javascript/login.js"></script>
